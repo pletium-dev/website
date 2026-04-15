@@ -3,6 +3,9 @@
 $envPath = __DIR__ . '/../../.env';
 $env = parse_ini_file($envPath);
 
+//Nastavení časového pásma
+date_default_timezone_set('Europe/Prague');
+
 function getArduinoToken($env) {
     $clientId = $env['ARDUINO_CLIENT_ID'];
     $clientSecret = $env['ARDUINO_CLIENT_SECRET'];

@@ -1,0 +1,58 @@
+:root {
+    --bg-card: #1e1e26;
+    --text-main: #e0e0e0;
+    --text-muted: #888891;
+    --accent-color: #00d4ff;
+    --grid-color: rgba(255, 255, 255, 0.05);
+}
+
+.graph-card {
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.graph-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.graph-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-main);
+}
+
+.graph-value-container {
+    text-align: right;
+}
+
+.graph-current-value {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    display: block;
+}
+
+.graph-unit {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.canvas-container {
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .canvas-container {
+        height: 250px;
+    }
+}

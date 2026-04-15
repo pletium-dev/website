@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json');
-require_once(__DIR__ . '/../Arduino/arduino_auth.php');
+require_once(__DIR__ . '/../../Arduino/arduino_auth.php');
 
 if (!$accessToken) {
     echo json_encode(["error" => "Unable to obtain an access token."]);
@@ -15,20 +15,20 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($ch);
 
 $thingData = json_decode($response, true);
-$temperature = null;
+$ppm = null;
 
 if (isset($thingData['properties'])) {
     foreach ($thingData['properties'] as $prop) {
-        if ($prop['variable_name'] === 'bmeTemperature') {
-            $temperature = round($prop['last_value'], 2);
+        if ($prop['variable_name'] === 'ppm') {
+            $ppm = round($prop['last_value'], 2); //Zaokrouhleno
             break;
         }
     }
 }
 
 echo json_encode([
-    "value" => $temperature,
-    "unit" => "°C",
+    "value" => $ppm,
+    "unit" => "ppm",
     "timestamp" => date("H:i:s")
 ]);
 ?>
