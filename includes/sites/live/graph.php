@@ -18,7 +18,6 @@
 (function() {
     const ctx = document.getElementById('chart-<?php echo $graphId; ?>').getContext('2d');
     
-    // Inicializace Chart.js
     const chart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -36,6 +35,7 @@
         options: {
             responsive: true,
             maintainAspectRatio: false,
+            animation: true,
             plugins: { legend: { display: false } },
             scales: {
                 x: { display: true },
@@ -47,34 +47,10 @@
         }
     });
 
-    async function updateGraph() {
-        try {
-            const response = await fetch('<?php echo $apiUrl; ?>');
-            const data = await response.json();
-
-            if (data.value !== null) {
-                // Aktualizace textových hodnot
-                document.getElementById('val-<?php echo $graphId; ?>').innerText = data.value;
-                document.getElementById('unit-<?php echo $graphId; ?>').innerText = data.unit;
-
-                // Přidání dat do grafu
-                chart.data.labels.push(data.timestamp);
-                chart.data.datasets[0].data.push(data.value);
-
-                if (chart.data.labels.length > 60) {
-                    chart.data.labels.shift();
-                    chart.data.datasets[0].data.shift();
-                }
-
-                chart.update();
-            }
-        } catch (e) {
-            console.error("Chyba načítání pro <?php echo $graphId; ?>:", e);
-        }
+    if (!window.cansatCharts) {
+        window.cansatCharts = {};
     }
-
-    // Interval aktualizace 5 sekund
-    setInterval(updateGraph, 5000);
-    updateGraph(); // První načtení hned
+    
+    window.cansatCharts['<?php echo $graphId; ?>'] = chart;
 })();
 </script>
