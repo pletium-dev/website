@@ -1,0 +1,183 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 998;
+    height: 60px;
+
+    background-color: color-mix(in srgb, var(--bg-surface), transparent 30%);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+nav.nav-open {
+    background-color: var(--bg-surface);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
+    transition: background-color 0.3s ease;
+}
+
+/*Desktop Navigace*/
+.desktop-nav {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.desktop-nav li {
+    height: 100%;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.desktop-nav a {
+    height: 100%;
+    padding: 0px 20px;
+    text-decoration: none;
+    align-items: center;
+    color: var(--text-main);
+    display: flex;
+    transition: color 0.2s ease;
+}
+
+.desktop-nav li:hover {
+    background-color: color-mix(in srgb, var(--primary), transparent 90%);
+}
+
+.desktop-nav li.hamburger-button a svg,
+.desktop-nav li.close-button a svg {
+    fill: var(--text-main) !important;
+    transition: fill 0.2s ease;
+}
+
+.desktop-nav li.hamburger-button:hover svg,
+.desktop-nav li.close-button:hover svg {
+    fill: var(--primary-hover) !important;
+}
+
+.desktop-nav li.hamburger-button a,
+.desktop-nav li.close-button a {
+    color: var(--text-main);
+}
+
+
+.desktop-nav a:hover {
+    color: var(--primary-hover);
+}
+
+.desktop-nav > li {
+    display: none;
+}
+
+.desktop-nav > li.hamburger-button {
+    display: block;
+}
+
+.desktop-nav > li.close-button {
+    display: none;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.navlogo-a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 100%;
+}
+
+.navlogo {
+    height: 55px;
+    width: auto;
+    display: block;
+}
+
+/*Hamburger Navigace*/
+.hamburger-nav {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 10px;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    display: flex;
+    background-color: var(--bg-surface);
+
+    transform: translateX(-100%);
+    transition: transform 0.2s ease-in-out;
+}
+
+.hamburger-nav.active {
+    transform: translateX(0);
+}
+
+.hamburger-nav li {
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    border-bottom: 1px solid var(--border);
+}
+
+.hamburger-nav li:hover {
+    background-color: color-mix(in srgb, var(--primary), transparent 90%);
+}
+
+.hamburger-nav a {
+    text-decoration: none;
+    color: var(--text-main);
+    padding: 11px 30px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*Overlay (Ztmavení pozadí při otevírání hamburger menu)*/
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+    .desktop-nav > li {
+        display: block;
+    }
+
+    .desktop-nav > li.hamburger-button {
+        display: none;
+    }
+}
+
+/*Počítač*/
+@media (min-width: 1024px) {
+
+}

@@ -1,0 +1,40 @@
+:root {
+    /* Backgrounds */
+    --bg-main: #0B0B14;
+    --bg-surface: #161625;
+    --border: #2D2D44;
+
+    /* Buttons */
+    --primary: #7C3AED;
+    --primary-hover: #8B5CF6;
+    --secondary: #4C1D95;
+    --secondary-hover: #5B21B6;
+
+    /* Accents & Data */
+    --accent: #06B6D4;
+    --text-main: #F8FAFC;
+    --text-muted: #94A3B8;
+    --success: #10B981;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.surface {
+  background-color: var(--bg-surface);
+}
