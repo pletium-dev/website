@@ -1,11 +1,8 @@
-<?php
-define('ROOT_PATH', __DIR__);
-?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
+
 <head>
-    <title>Document</title>
+    <title>Pletium</title>
 
     <?php require 'includes/html_head.php'; ?>
 
@@ -13,8 +10,9 @@ define('ROOT_PATH', __DIR__);
     <link rel="stylesheet" href="/assets/css/sites/index/cansat.css">
     <link rel="stylesheet" href="/assets/css/sites/index/team.css">
 </head>
+
 <body>
-    <?php require ROOT_PATH . '/includes/elements/nav.php'; ?>
+    <?php require __DIR__ . '/includes/elements/nav.php'; ?>
 
     <section class="hero">
         <div class="hero-content-grid">
@@ -29,8 +27,8 @@ define('ROOT_PATH', __DIR__);
                     Studentský tým účastnící se soutěže CanSat, který vyvíjí funkční atmosférickou sondu o velikosti plechovky.
                 </p>
                 <div class="hero-actions-group">
-                    <a href="#prozkoumat" class="hero-btn btn-primary">Zjistit více</a>
-                    <a href="#telemetrie" class="hero-btn btn-secondary">Sledovat let</a>
+                    <a href="/" class="hero-btn btn-primary">Zjistit více</a>
+                    <a href="/live" class="hero-btn btn-secondary">Sledovat let</a>
                 </div>
             </div>
 

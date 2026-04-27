@@ -1,58 +1,84 @@
-:root {
-    --bg-card: #1e1e26;
-    --text-main: #e0e0e0;
-    --text-muted: #888891;
-    --accent-color: #00d4ff;
-    --grid-color: rgba(255, 255, 255, 0.05);
+.graph-card {
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+    position: relative;
+    overflow: hidden;
 }
 
-.graph-card {
-    background-color: var(--bg-card);
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+.offline-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 11, 20, 0.85);
+    backdrop-filter: blur(2px);
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    z-index: 10;
+    
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.graph-card.is-offline .offline-overlay {
+    opacity: 1;
+    pointer-events: all;
 }
 
 .graph-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
+    align-items: flex-start;
+    margin-bottom: 1rem;
 }
 
 .graph-title {
     margin: 0;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--text-main);
 }
 
 .graph-value-container {
-    text-align: right;
+    display: flex;
+    align-items: baseline; 
+    justify-content: flex-end; 
+    gap: 0.3rem; 
 }
 
 .graph-current-value {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    color: var(--accent-color);
-    display: block;
+    color: var(--accent);
+    line-height: 1.2;
 }
 
 .graph-unit {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: var(--text-muted);
 }
 
 .canvas-container {
     position: relative;
-    height: 200px;
+    height: 180px;
     width: 100%;
+    margin-top: auto;
 }
 
 @media (min-width: 768px) {
     .canvas-container {
-        height: 250px;
+        height: 220px;
     }
 }

@@ -11,7 +11,8 @@
 
         <ul class="desktop-nav">
             <li><a href="/">Domů</a></li>
-            <li><a href="#nas-tym">Náš tým</a></li>
+            <li><a href="/#nas-tym">Náš tým</a></li>
+            <li><a href="/live">Živá data</a></li>
             <li class="hamburger-button" onclick=showHamburgerNav(event)><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="currentColor"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             <li class="close-button" onclick=hideHamburgerNav(event)><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="currentColor"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
         </ul>
@@ -20,7 +21,8 @@
 
     <ul class="hamburger-nav">
         <li><a href="/">Domů</a></li>
-        <li><a href="#nas-tym">Náš tým</a></li>
+        <li><a href="/#nas-tym">Náš tým</a></li>
+        <li><a href="/live">Živá data</a></li>
     </ul>
 
     <div class="overlay"></div>

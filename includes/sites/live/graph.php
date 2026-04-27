@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="/assets/css/sites/live/graph.css">
-
-<div class="graph-card" id="card-<?php echo $graphId; ?>">
+<div class="graph-card surface" id="card-<?php echo $graphId; ?>">
+    <div class="offline-overlay">Pozemní stanice je vypnutá</div>
+    
     <div class="graph-header">
         <h3 class="graph-title"><?php echo $graphTitle; ?></h3>
         <div class="graph-value-container">
@@ -24,8 +24,8 @@
             labels: [],
             datasets: [{
                 data: [],
-                borderColor: '#00d4ff',
-                backgroundColor: 'rgba(0, 212, 255, 0.1)',
+                borderColor: '#06B6D4', 
+                backgroundColor: 'rgba(6, 182, 212, 0.1)', 
                 borderWidth: 2,
                 pointRadius: 2,
                 tension: 0.4, 
@@ -41,7 +41,7 @@
                 x: { display: true },
                 y: {
                     grid: { color: 'rgba(255, 255, 255, 0.05)' },
-                    ticks: { color: '#888891', font: { size: 10 } }
+                    ticks: { color: '#94A3B8', font: { size: 10 } } 
                 }
             }
         }
