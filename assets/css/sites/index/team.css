@@ -1,12 +1,10 @@
-/* //Sekce Náš tým - Základní obal */
 .team-section {
-    padding: 6rem 0; /* Zvětšeno horní a spodní odsazení sekce */
     background-color: var(--bg-main);
 }
 
 .team-container {
-    width: 90%; /* Na mobilu zajistí, že obsah zabere 90% a zbytek jsou okraje */
-    max-width: 1300px; /* Zvětšeno pro PC, aby karty mohly být širší */
+    width: 90%;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -19,49 +17,42 @@
     margin-bottom: 4rem;
 }
 
-/* //Grid pro uspořádání karet - MOBILE FIRST (1 sloupec) */
 .team-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
 }
 
-/* //Karta člena týmu */
 .team-card {
     background-color: var(--bg-surface);
     border: 1px solid var(--border);
     border-radius: 16px;
-    padding: 3rem 2rem; /* Zvětšeno pro mohutnější vzhled karty */
+    padding: 3rem 2rem;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* //Jemný hover efekt na kartu (pouze stín a zvednutí) */
 .team-card:hover {
-    transform: translateY(-5px); /* Lehčí zvednutí */
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4); /* Decentní stín místo změny barvy borderu */
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
 }
 
-/* //Kruhová fotka */
 .team-photo {
-    width: 140px; /* Trochu zvětšená fotka */
+    width: 140px;
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1.5rem;
     border: 3px solid var(--border);
-    /* Odstraněna transition na border-color, protože už nebudeme měnit barvu */
 }
 
-/* //Hlavní text - Jméno */
 .team-name {
     color: var(--text-main);
-    font-size: 1.5rem; /* Zvětšeno písmo jména */
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
-/* //Vedlejší text - Role v týmu */
 .team-role {
     color: var(--text-muted);
     font-size: 1.05rem;
@@ -69,7 +60,6 @@
     line-height: 1.4;
 }
 
-/* //Responzivita pro tablety (2 sloupce) */
 @media (min-width: 640px) {
     .team-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -77,7 +67,6 @@
     }
 }
 
-/* //Responzivita pro PC (4 sloupce vedle sebe) */
 @media (min-width: 1024px) {
     .team-grid {
         grid-template-columns: repeat(4, 1fr);

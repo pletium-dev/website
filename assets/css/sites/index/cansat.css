@@ -1,0 +1,128 @@
+.cansat-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+}
+
+.cansat-section-image {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; 
+}
+
+.cansat-section-image img {
+    width: 50%;
+    max-width: 400px;
+    border-radius: 16px;
+    display: block;
+    object-fit: cover;
+    border: none;
+    box-shadow: none;
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.4));
+}
+
+.cansat-section-content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cansat-section-content h2 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: var(--text-main);
+}
+
+.cansat-section-content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: var(--text-muted);
+    max-width: 90%; 
+}
+
+/*========== TABLET ===========*/
+@media (min-width: 768px) {
+    .cansat-section {
+        flex-direction: row-reverse;
+        gap: 10px;
+        margin: 0px 50px; 
+    }
+    
+    .cansat-section-image {
+        flex: 0 0 35%;
+        margin: 0;
+    }
+
+    .cansat-section-image img {
+        width: 80%;
+    }
+
+    .cansat-section-content {
+        flex: 0 0 65%;
+        margin: 0;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .cansat-section-content h2 {
+        font-size: 32px; 
+    }
+
+    .cansat-section-content p {
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 90%; 
+    }
+}
+
+/*========== POČÍTAČ ==========*/
+@media (min-width: 1024px) {
+    .cansat-section {
+        margin: 0px auto;
+        width: 90%;
+        max-width: 1200px;
+        gap: 10px;
+    }
+
+    .cansat-section-image {
+        flex: 0 0 30%;
+    }
+
+    .cansat-section-content {
+        flex: 0 0 70%;
+    }
+
+    .cansat-section-content h2 {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+
+    .cansat-section-content p {
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 90%;
+    }
+}
+
+/*========== VELKÉ MONITORY ==========*/
+@media (min-width: 1600px) {
+    .cansat-section {
+        max-width: 1500px; 
+    }
+
+    .cansat-section-content h2 {
+        font-size: 52px;
+    }
+
+    .cansat-section-content p {
+        font-size: 22px;
+    }
+}

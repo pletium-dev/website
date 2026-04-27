@@ -10,3 +10,4 @@
 
 <link rel="stylesheet" href="/assets/css/style.css">
 <link rel="stylesheet" href="/assets/css/elements/buttons.css">
+<link rel="stylesheet" href="/assets/css/elements/divider.css">
