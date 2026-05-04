@@ -1,0 +1,125 @@
+/* --- FOOTER STYLES --- */
+.site-footer {
+    background-color: var(--bg-surface);
+    color: var(--text-main);
+    padding: 60px 20px 20px;
+    margin-top: 50px;
+    border-top: 1px solid var(--border);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+/* Nadpisy sekcí */
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.footer-section.brand h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.1;
+}
+
+.brand-text {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.brand-studio {
+    font-size: 1rem;
+    letter-spacing: 4px;
+    color: var(--text-muted); /* Změněno z cyan na tlumenou šedou */
+    text-transform: uppercase;
+}
+
+.footer-section p {
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+/* Ikony u kontaktu */
+.footer-section.contact p i {
+    color: var(--primary); /* Změněno z cyan na primární fialovou */
+    width: 20px; 
+    text-align: center;
+}
+
+/* Stylování odkazů */
+.footer-section.links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section.links li {
+    margin-bottom: 12px;
+}
+
+.footer-section.links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.footer-section.links a:hover {
+    color: var(--primary-hover); /* Změněno z cyan na světlejší fialovou */
+}
+
+/* Sociální sítě */
+.socials {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--border);
+    border-radius: 50%;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials a i {
+    font-size: 1.3rem;
+}
+
+.socials a:hover {
+    border-color: var(--primary);
+    background-color: var(--primary);
+    color: var(--text-main);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px -5px rgba(124, 58, 237, 0.4);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 50px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}

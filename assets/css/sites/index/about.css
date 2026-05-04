@@ -1,4 +1,4 @@
-.cansat-section {
+.about-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,15 +6,15 @@
     margin: 0px 20px;
 }
 
-.cansat-section-image {
+.about-section-image {
     width: 100%;
     margin-bottom: 20px;
     display: flex;
     justify-content: center; 
 }
 
-.cansat-section-image img {
-    width: 50%;
+.about-section-image img {
+    width: 80%;
     max-width: 400px;
     border-radius: 16px;
     display: block;
@@ -24,7 +24,7 @@
     filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.4));
 }
 
-.cansat-section-content {
+.about-section-content {
     display: flex;
     align-items: center;
     text-align: center;
@@ -32,14 +32,14 @@
     flex-direction: column;
 }
 
-.cansat-section-content h2 {
+.about-section-content h2 {
     font-weight: 700;
     font-size: 36px;
     margin-bottom: 10px;
     color: var(--text-main);
 }
 
-.cansat-section-content p {
+.about-section-content p {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
@@ -50,80 +50,85 @@
 
 /*========== TABLET ===========*/
 @media (min-width: 768px) {
-    .cansat-section {
-        flex-direction: row-reverse;
-        gap: 10px;
+    .about-section {
+        flex-direction: row;
+        gap: 30px;
         margin: 0px 50px; 
     }
     
-    .cansat-section-image {
-        flex: 0 0 35%;
+    .about-section-image {
+        flex: 0 0 40%;
         margin: 0;
-        justify-content: right;
+        justify-content: left;
     }
 
-    .cansat-section-image img {
-        width: 80%;
+    .about-section-image img {
+        width: 100%;
+        max-width: 450px;
     }
 
-    .cansat-section-content {
-        flex: 0 0 65%;
+    .about-section-content {
+        flex: 0 0 60%;
         margin: 0;
         align-items: flex-start;
         text-align: left;
     }
 
-    .cansat-section-content h2 {
+    .about-section-content h2 {
         font-size: 32px; 
     }
 
-    .cansat-section-content p {
+    .about-section-content p {
         font-size: 16px;
         line-height: 1.5;
-        max-width: 90%; 
+        max-width: 95%; 
     }
 }
 
 /*========== POČÍTAČ ==========*/
 @media (min-width: 1024px) {
-    .cansat-section {
+    .about-section {
         margin: 0px auto;
         width: 90%;
         max-width: 1200px;
-        gap: 10px;
+        gap: 40px;
     }
 
-    .cansat-section-image {
-        flex: 0 0 30%;
+    .about-section-image {
+        flex: 0 0 45%;
     }
 
-    .cansat-section-content {
-        flex: 0 0 70%;
+    .about-section-image img {
+        max-width: 550px;
     }
 
-    .cansat-section-content h2 {
+    .about-section-content {
+        flex: 0 0 55%;
+    }
+
+    .about-section-content h2 {
         font-size: 42px;
         margin-bottom: 15px;
     }
 
-    .cansat-section-content p {
+    .about-section-content p {
         font-size: 18px;
         line-height: 1.6;
-        max-width: 90%;
+        max-width: 100%;
     }
 }
 
 /*========== VELKÉ MONITORY ==========*/
 @media (min-width: 1600px) {
-    .cansat-section {
+    .about-section {
         max-width: 1500px; 
     }
 
-    .cansat-section-content h2 {
+    .about-section-content h2 {
         font-size: 52px;
     }
 
-    .cansat-section-content p {
+    .about-section-content p {
         font-size: 22px;
     }
 }

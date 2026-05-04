@@ -8,7 +8,9 @@
 
     <link rel="stylesheet" href="/assets/css/sites/index/hero.css">
     <link rel="stylesheet" href="/assets/css/sites/index/cansat.css">
+    <link rel="stylesheet" href="/assets/css/sites/index/about.css">
     <link rel="stylesheet" href="/assets/css/sites/index/team.css">
+    <link rel="stylesheet" href="/assets/css/sites/index/sponsors.css">
 </head>
 
 <body>
@@ -27,7 +29,7 @@
                     Studentský tým účastnící se soutěže CanSat, který vyvíjí funkční atmosférickou sondu o velikosti plechovky.
                 </p>
                 <div class="hero-actions-group">
-                    <a href="/" class="hero-btn btn-primary">Zjistit více</a>
+                    <a href="/#o-tymu" class="hero-btn btn-primary">Zjistit více</a>
                     <a href="/live" class="hero-btn btn-secondary">Sledovat let</a>
                 </div>
             </div>
@@ -54,31 +56,51 @@
 
     <div class="divider"></div>
 
-    <section class="team-section" id="nas-tym">
+    <section id="o-tymu">
+        <div class="about-section">
+            <div class="about-section-image">
+                <img src="/assets/images/index/example.jpg" draggable="false" alt="Náš tým">
+            </div>
+            <div class="about-section-content">
+                <h2>
+                    O týmu
+                </h2>
+                <p>
+                    Jsme čtyřčlenný tým studentů oboru Informační technologie ze Střední průmyslové školy ve Frýdku-Místku.
+                    V rámci soutěže CanSat propojujeme naše zkušenosti z oblasti softwaru a hardwaru při vývoji funkčního modelu satelitu. 
+                    V projektu se snažíme naše znalosti posunout o úroveň výš při řešení technických výzev spojených s vesmírným výzkumem.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="team-section" id="clenove-tymu">
         <div class="team-container">
-            <h2 class="section-title">Náš tým</h2>
+            <h2 class="section-title">Členové týmu</h2>
             <div class="team-grid">
 
                 <div class="team-card">
-                    <img src="/assets/images/index/team/default.webp" alt="Fotografie člena" class="team-photo">
+                    <img src="/assets/images/index/team/default.webp" alt="Fotografie člena" class="team-photo" draggable="false">
                     <h3 class="team-name">Adam</h3>
                     <p class="team-role">Kapitán týmu, Programování</p>
                 </div>
 
                 <div class="team-card">
-                    <img src="/assets/images/index/team/default.webp" alt="Fotografie člena" class="team-photo">
+                    <img src="/assets/images/index/team/default.webp" alt="Fotografie člena" class="team-photo" draggable="false">
                     <h3 class="team-name">Honza</h3>
                     <p class="team-role">Web Developer, Správce soc. sítí</p>
                 </div>
 
                 <div class="team-card">
-                    <img src="/assets/images/index/team/default.webp" alt="Fotografie člena" class="team-photo">
+                    <img src="/assets/images/index/team/default.webp" alt="Fotografie člena" class="team-photo" draggable="false">
                     <h3 class="team-name">Helena</h3>
                     <p class="team-role">3D modelování, Programování</p>
                 </div>
 
                 <div class="team-card">
-                    <img src="/assets/images/index/team/default.webp" alt="Fotografie člena" class="team-photo">
+                    <img src="/assets/images/index/team/default.webp" alt="Fotografie člena" class="team-photo" draggable="false">
                     <h3 class="team-name">Veronika</h3>
                     <p class="team-role">Grafika, Tvorba padáku</p>
                 </div>
@@ -87,5 +109,45 @@
     </section>
 
     <div class="divider"></div>
+
+    <section class="sponsors-section" id="sponzori">
+        <div class="team-container">
+            <h2 class="section-title">Naši sponzoři</h2>
+            <div class="sponsors-grid">
+
+                <div class="sponsor-card">
+                    <div class="sponsor-logo-wrapper">
+                        <img src="/assets/images/index/sponsors/laskakit.webp" alt="Logo Sponzor 1" class="sponsor-logo" draggable="false">
+                    </div>
+                    <h3 class="sponsor-name">LaskaKit</h3>
+                    <p class="sponsor-gift">Součástky, Mikrokontroléry</p>
+                    <a href="https://www.laskakit.cz/" target="_blank" class="btn btn-primary btn-small">Navštívit web</a>
+                </div>
+
+                <div class="sponsor-card">
+                    <div class="sponsor-logo-wrapper">
+                        <img src="/assets/images/index/sponsors/lpz-group.webp" alt="Logo Sponzor 2" class="sponsor-logo" draggable="false">
+                    </div>
+                    <h3 class="sponsor-name">LPZ-Group</h3>
+                    <p class="sponsor-gift">Peněžní dar</p>
+                    <a href="https://www.lpz-group.cz/" target="_blank" class="btn btn-primary btn-small">Navštívit web</a>
+                </div>
+
+                <div class="sponsor-card">
+                    <div class="sponsor-logo-wrapper">
+                        <img src="/assets/images/index/sponsors/hwkitchen.webp" alt="Logo Sponzor 3" class="sponsor-logo" draggable="false">
+                    </div>
+                    <h3 class="sponsor-name">HWKitchen</h3>
+                    <p class="sponsor-gift">Mikrokontrolér</p>
+                    <a href="https://www.hwkitchen.cz/" target="_blank" class="btn btn-primary btn-small">Navštívit web</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <?php require __DIR__ . '/includes/elements/footer.php'; ?>
 </body>
 </html>

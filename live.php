@@ -4,7 +4,7 @@
 <head>
     <title>Živá data | Pletium</title>
 
-    <?php require 'includes/html_head.php'; ?>
+    <?php require __DIR__ .  '/includes/html_head.php'; ?>
 
     <link rel="stylesheet" href="/assets/css/sites/live/live.css">
     <link rel="stylesheet" href="/assets/css/sites/live/graph.css">
@@ -81,6 +81,8 @@
         </section>
 
     </main>
+
+    <?php require __DIR__ . '/includes/elements/footer.php'; ?>
 
     <script>
         async function fetchAllData() {
