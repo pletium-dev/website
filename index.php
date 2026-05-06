@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/assets/css/sites/index/cansat.css">
     <link rel="stylesheet" href="/assets/css/sites/index/about.css">
     <link rel="stylesheet" href="/assets/css/sites/index/team.css">
+    <link rel="stylesheet" href="/assets/css/sites/index/live.css">
     <link rel="stylesheet" href="/assets/css/sites/index/sponsors.css">
 </head>
 
@@ -110,6 +111,25 @@
                     <h3 class="team-name">Veronika</h3>
                     <p class="team-role">Grafika, Tvorba padáku, Výroba antény</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+        <div class="live-section">
+            <div class="live-section-image">
+                <img src="/assets/images/index/live.webp" draggable="false" alt="Náš tým">
+            </div>
+            <div class="live-section-content">
+                <h2>
+                    Sleduj naši misi
+                </h2>
+                <p>
+                    Sledujte průběh naší mise v reálném čase prostřednictvím živého přenosu telemetrických dat přímo na našem webu.
+                </p>
+                <a href="/live" class="btn btn-primary">Sledovat let</a>
             </div>
         </div>
     </section>
