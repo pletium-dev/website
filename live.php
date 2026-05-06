@@ -133,7 +133,7 @@
                         chart.data.labels.push(sensorData.timestamp || '');
                         chart.data.datasets[0].data.push(sensorData.value);
 
-                        if (chart.data.labels.length > 300) {
+                        if (chart.data.labels.length > 600) {
                             chart.data.labels.shift();
                             chart.data.datasets[0].data.shift();
                         }
