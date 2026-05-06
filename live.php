@@ -19,7 +19,7 @@
         
         <header class="page-header">
             <h1 class="page-title">Živá data</h1>
-            <p class="page-subtitle">Sleduj data z naší mise v živém čase</p>
+            <p class="page-subtitle">Sleduj data z naší mise v reálném čase</p>
         </header>
 
         <section class="data-section">

@@ -1,4 +1,3 @@
-/* --- FOOTER STYLES --- */
 .site-footer {
     background-color: var(--bg-surface);
     color: var(--text-main);
@@ -15,7 +14,6 @@
     gap: 40px;
 }
 
-/* Nadpisy sekcí */
 .footer-section h3 {
     font-size: 1.2rem;
     margin-bottom: 20px;
@@ -40,7 +38,7 @@
 .brand-studio {
     font-size: 1rem;
     letter-spacing: 4px;
-    color: var(--text-muted); /* Změněno z cyan na tlumenou šedou */
+    color: var(--text-muted);
     text-transform: uppercase;
 }
 
@@ -54,14 +52,12 @@
     gap: 10px; 
 }
 
-/* Ikony u kontaktu */
 .footer-section.contact p i {
-    color: var(--primary); /* Změněno z cyan na primární fialovou */
+    color: var(--primary);
     width: 20px; 
     text-align: center;
 }
 
-/* Stylování odkazů */
 .footer-section.links ul {
     list-style: none;
     padding: 0;
@@ -80,10 +76,9 @@
 }
 
 .footer-section.links a:hover {
-    color: var(--primary-hover); /* Změněno z cyan na světlejší fialovou */
+    color: var(--primary-hover);
 }
 
-/* Sociální sítě */
 .socials {
     margin-top: 20px;
     display: flex;

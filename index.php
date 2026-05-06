@@ -59,7 +59,7 @@
     <section id="o-tymu">
         <div class="about-section">
             <div class="about-section-image">
-                <img src="/assets/images/index/example.jpg" draggable="false" alt="Náš tým">
+                <img src="/assets/images/index/team.webp" draggable="false" alt="Náš tým">
             </div>
             <div class="about-section-content">
                 <h2>
@@ -82,27 +82,33 @@
             <div class="team-grid">
 
                 <div class="team-card">
-                    <img src="/assets/images/index/team/default.webp" alt="Fotografie člena" class="team-photo" draggable="false">
+                    <img src="/assets/images/index/team/Jirka.webp" alt="Fotografie člena" class="team-photo" draggable="false">
+                    <h3 class="team-name">Jirka</h3>
+                    <p class="team-role">Mentor týmu</p>
+                </div>
+
+                <div class="team-card">
+                    <img src="/assets/images/index/team/Adam.webp" alt="Fotografie člena" class="team-photo" draggable="false">
                     <h3 class="team-name">Adam</h3>
                     <p class="team-role">Kapitán týmu, Programování</p>
                 </div>
 
                 <div class="team-card">
-                    <img src="/assets/images/index/team/default.webp" alt="Fotografie člena" class="team-photo" draggable="false">
+                    <img src="/assets/images/index/team/Honza.webp" alt="Fotografie člena" class="team-photo" draggable="false">
                     <h3 class="team-name">Honza</h3>
                     <p class="team-role">Web Developer, Správce soc. sítí</p>
                 </div>
 
                 <div class="team-card">
-                    <img src="/assets/images/index/team/default.webp" alt="Fotografie člena" class="team-photo" draggable="false">
+                    <img src="/assets/images/index/team/Helena.webp" alt="Fotografie člena" class="team-photo" draggable="false">
                     <h3 class="team-name">Helena</h3>
                     <p class="team-role">3D modelování, Programování</p>
                 </div>
 
                 <div class="team-card">
-                    <img src="/assets/images/index/team/default.webp" alt="Fotografie člena" class="team-photo" draggable="false">
+                    <img src="/assets/images/index/team/Veronika.webp" alt="Fotografie člena" class="team-photo" draggable="false">
                     <h3 class="team-name">Veronika</h3>
-                    <p class="team-role">Grafika, Tvorba padáku</p>
+                    <p class="team-role">Grafika, Tvorba padáku, Výroba antény</p>
                 </div>
             </div>
         </div>
